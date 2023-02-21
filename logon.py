@@ -1,11 +1,11 @@
 from wtfix.apps.base import MessageTypeHandlerApp, on
-from wtfix.apps.admin import AuthenticationApp
-from wtfix.pipeline import BasePipeline
+# from wtfix.apps.admin import AuthenticationApp
+# from wtfix.pipeline import BasePipeline
 from wtfix.conf import settings
 from wtfix.message import admin
 from wtfix.protocol.contextlib import connection
 import logging
-import os
+# import os
 
 
 logger = settings.logger
@@ -32,7 +32,11 @@ logging.info(f"BEGIN_STRING == {settings.BEGIN_STRING}")
 
 logging.info(type(settings))
 logging.info(dir(settings))
-logging.info(settings.PASSWORD)
+
+
+SecretAlgoTradingRecipe.start
+MessageTypeHandlerApp.start
+
     # setting_value = getattr(settings, set)
     # logging.info(f"setting == {set, setting_value}")
 
